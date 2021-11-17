@@ -1,0 +1,65 @@
+[
+  {
+    "id_product": 1,
+    "product_name": "Jacket",
+    "price": 252, 
+    "image": "img/products/Product1.png",
+    "imageMob": "img/products/Product1mob.jpg"
+  },
+  {
+    "id_product": 2,
+    "product_name": "Shirt",
+    "price": 142, 
+    "image": "img/products/Product7.png",
+    "imageMob": "img/products/Product7mob.jpg"
+  },
+  {
+    "id_product": 3,
+    "product_name": "Blouse",
+    "price": 210, 
+    "image": "img/products/Product3.png",
+    "imageMob": "img/products/Product3mob.jpg"
+  },
+  {
+    "id_product": 4,
+    "product_name": "T-shirt",
+    "price": 120, 
+    "image": "img/products/Product4.png",
+    "imageMob": "img/products/Product4mob.jpg"
+  },
+  {
+    "id_product": 5,
+    "product_name": "T-shirt with long sleeves",
+    "price": 140, 
+    "image": "img/products/Product8.png",
+    "imageMob": "img/products/Product8mob.jpg"
+  },
+  {
+    "id_product": 6,
+    "product_name": "T-shirt white",
+    "price": 99, 
+    "image": "img/products/Product9.png",
+    "imageMob": "img/products/Product9mob.jpg"
+  },
+  {
+    "id_product": 7,
+    "product_name": "Shirt white",
+    "price": 145, 
+    "image": "img/products/Product10.png",
+    "imageMob": "img/products/Product10mob.jpg"
+  },
+  {
+    "id_product": 8,
+    "product_name": "Leather jacket",
+    "price": 320, 
+    "image": "img/products/Product11.png",
+    "imageMob": "img/products/Product11mob.jpg"
+  },
+  {
+    "id_product": 9,
+    "product_name": "Short-sleeved shirt",
+    "price": 110, 
+    "image": "img/products/Product12.png",
+    "imageMob": "img/products/Product12mob.jpg"
+  }
+]
