@@ -1,0 +1,136 @@
+html,
+body {
+  height: 100%;
+}
+
+.wrapper {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.wrapper__content {
+  flex-grow: 1;
+}
+
+
+.regform {
+    display: flex;
+    margin-top: 40px;
+    flex: 360px 652px;
+    gap: 128px;
+
+    // .regform__title
+
+    &__title {
+        font-size: 16px;
+        line-height: 19px;
+        margin-bottom: 20px;
+    }
+
+    // .regform__input
+
+    &__input {
+        font-size: 13px;
+        line-height: 16px;
+        height: 45px;
+        background-color: #ffffff;
+        border: 1px solid #A4A4A4;
+        width: 100%;
+        height: 45px;
+        padding: 0 15px;
+        min-width: 360px;
+      
+    
+    }
+    .input-margin {
+        margin-bottom: 20px;
+    }
+    .input-mag {
+        margin-bottom: 31px;
+    }
+
+    // .regform__radio
+
+    &__radio {
+        font-size: 11px;
+        line-height: 13px;
+        color: #000000;
+        margin-bottom: 34px;
+        padding-right: 20px;
+        margin-left: 10px;
+    }
+
+    // .regform__txt
+
+    &__txt {
+        font-size: 13px;
+        line-height: 16px;
+        color: #B1B1B1;
+        margin-top: 15px;
+        margin-bottom: 39px;
+    }
+
+    // .regform__button
+
+    &__button {
+    line-height: 17px;
+    color: #FFFFFF;
+    padding: 16px 29px 16px 29px;
+    background: $colorSite;
+    margin-bottom: 96px;
+    }
+    &__button:hover path {
+        fill: $colorSite;
+    } 
+    &__button:hover {
+        color: $colorSite;
+        background-color: #fff;
+        border: 1px solid $colorSite;
+    
+    }
+
+
+    svg {
+        margin-left: 20px;
+    }
+
+    // .regform__left
+
+    // &__left {
+    // }
+
+    // .regform__tlt
+
+    &__tlt {
+        font-size: 24px;
+        line-height: 29px;
+        color: #000000;
+        margin-bottom: 22px;
+    }
+
+    // .regform__text
+
+    &__text {
+        font-size: 24px;
+        line-height: 29px;
+        color: #000000;
+        margin-bottom: 21px;
+    }
+
+    // .regform__list
+
+    &__list {
+        font-size: 24px;
+        line-height: 29px;
+        color: #000000;
+        margin-bottom: 16px;
+        list-style: none;
+    }
+
+    ul li:before {
+        content: '✓';
+        padding-right: 22px;
+        
+    }
+}

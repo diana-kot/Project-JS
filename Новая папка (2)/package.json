@@ -1,15 +1,13 @@
 {
-  "name": "ms_shop",
+  "name": "my_project",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "main.js",
   "scripts": {
-    "build": "del dist && webpack --mode production --config webpack.server.config.js && webpack --mode production --config webpack.prod.config.js",
-    "build_dev": "del dist &&  webpack --mode development --config webpack.server.config.js && webpack --mode development --config webpack.dev.config.js --w",
-    "watch": "webpack -w",
+    "build": "rmdir dist && webpack --mode production --config webpack.server.config.js && webpack --mode production --config webpack.prod.config.js",
     "start": "nodemon dist/server/server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "author": "Vladislav Redin",
   "license": "ISC",
   "nodemonConfig": {
     "ignore": [
