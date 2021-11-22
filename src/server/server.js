@@ -1,27 +1,50 @@
 const express = require('express');
 const fs = require('fs');
+const cartRouter = require('./cartRouter');//обработчик всех запросов корзины
 const app = express();
-const cart = require('./cartRouter');//обработчик всех запросов корзины
+const path = require('path');
 
 app.use(express.json());
-app.use('/', express.static('dist/public'));
-app.use('/api/cart', cart);
+app.use('/', express.static(path.resolve(__dirname, '../public')));
+app.use('/api/cart', cartRouter);
 
+const ProductsJSONPath = path.resolve(__dirname, './db/products.json')
 
 app.get('/api/products', (req, res) => {
-    fs.readFile('dist/server/db/products.json', 'utf-8', (err, data) => {
-        if(err){
-            res.sendStatus(404, JSON.stringify({result:0, text: err}));
+    fs.readFile(ProductsJSONPath, 'utf-8', (err, data) => {
+        if (err) {
+            res.send(404, JSON.stringify({ result: 0, text: err }));
         } else {
             res.send(data);
         }
-    })
+    });
 });
 
-// app.get('/api/cart/:id', (req, res) => {
-//    // res.send(req.params.id);
-//     res.send(req.query);
-// });
+
+const catalogJSONPath = path.resolve(__dirname, './db/catalog.json');
+
+app.get('/api/catalog', (req, res) => {
+    fs.readFile(catalogJSONPath, 'utf-8', (err, data) => {
+        if (err) {
+            res.send(404, JSON.stringify({ result: 0, text: err }));
+        } else {
+            res.send(data);
+        }
+    });
+});
+
+
+const singleJSONPath = path.resolve(__dirname, './db/singleProduct.json');
+
+app.get('/api/singleProduct', (req, res) => {
+    fs.readFile(singleJSONPath, 'utf-8', (err, data) => {
+        if (err) {
+            res.send(404, JSON.stringify({ result: 0, text: err }));
+        } else {
+            res.send(data);
+        }
+    });
+});
 
 const port = process.env.PORT || 3000;
 app.listen(port, () => console.log(`Listen on port ${port}...`));

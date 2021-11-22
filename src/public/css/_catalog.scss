@@ -1,0 +1,396 @@
+
+
+@charset "UTF-8";
+
+.box {
+  padding-top: 51px;
+  padding-bottom: 64px;
+  display: flex;
+  gap: $gapGrid;
+}
+
+.box__filter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-content: space-between;
+  gap: 11px;
+  cursor: pointer;
+}
+
+.box__chosse {
+  display: flex;
+  justify-content: space-between;
+  gap: 27px;
+}
+
+.chosse {
+  display: flex;
+}
+
+.select-card {
+  line-height: 17px;
+  color: #6F6E6E;
+  padding-right: 10px;
+  cursor: pointer;
+}
+
+.select-card:hover {
+  color: #f16d7f;
+}
+
+.box__filter:hover {
+  color: #f16d7f;
+}
+
+/* навигация начало*/
+.navi-catalogs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 48px;
+  margin-bottom: 97px;
+}
+
+ul.pagging__list {
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+  padding: 11px 14px;
+}
+
+ul.pagging__list li {
+  display: inline;
+}
+
+ul.pagging__list li a:active {
+  color: #ef5b70;
+}
+
+ul.pagging__list li a:hover:not(.active) {
+  background-color: #ddd;
+}
+
+.pagging__modif {
+  font-size: 16px;
+  line-height: 19px;
+  color: #aaaaaa;
+}
+
+ul.pagging__list li a {
+  border: 1px 0px 1px 0px solid #ebebeb;
+  border-radius: 3px;
+  text-decoration: none;
+  -webkit-transition: background-color .3s;
+  transition: background-color .3s;
+  font-size: 16px;
+  color: #c4c4c4;
+  padding: 7.5px;
+}
+
+.navi-catalog__bl {
+  border: 1px solid #ebebeb;
+}
+
+ul.pagging__list li .modif-li {
+    color: #000;
+}
+
+.box__filter:hover path {
+  fill: #ef5b70;
+}
+
+
+
+/* боковое меню */
+
+/* summary::before {
+    display: block;
+    width: 5px;
+    height: 37px;
+    background-color: #ef5b70;
+    padding-right: 5px;
+} */
+.menu__sub__title::marker {
+  content: '';
+  }
+  .menu__sub__title::after {
+      color: #6f6e6e;
+      content: '';
+      padding-right: 0.5em;
+      display: flex;
+      flex: 0 0 5px;
+  }
+  
+  .menu__sub__titl[open] > summary::after {
+      content: '';
+  }
+  
+  .menu__sub {
+      // margin-top: 39px;
+      display: flex;
+      flex-direction: column;
+      max-width: 360px;
+      // margin-right: 48px;
+  }
+  
+  .menu__sub__title {
+      font-size: 14px;
+      line-height: 17px;
+      text-transform: uppercase;
+      color: #ef5b70;
+      text-align: left;
+      display: flex;
+      align-items: center; 
+      justify-content: space-between;
+      padding: 0;
+      margin-top: 24px;
+      border-bottom: 1px solid #ebebeb;
+      padding-bottom: 10px;
+  }
+
+      .menu__sub__title {
+        border-left: 5px solid #EF5B70;
+        padding-left: 11px;
+      }
+
+      .menu__sub__list {
+          font-size: 14px;
+          line-height: 0px;
+          font-weight: 400;
+          color: #6f6e6e;
+      }
+
+    .box__title svg {
+        margin-left: 11px;
+      }
+  
+      .menu__sub__link {
+          line-height: 28px;
+          font-weight: 400;
+          color: #6F6E6E;
+          padding-left: 34px;
+      }
+  
+  .menu__sub__link:hover {
+      color: #f16d7f;
+  }
+
+.box__title[open] > summary::after {
+  content: '';
+}
+
+.box__title::marker {
+  content: '';
+  }
+
+  .summmary__menu {
+    display: flex;
+    position: absolute;
+    z-index: 9;
+    display: block;
+    background: #FFFFFF;
+    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.16);
+    padding-left: 16px;
+    width: 360px;
+  
+}
+.menu__sub {
+  position: relative;
+}
+
+.menu__sub__titl:last-child {
+  margin-bottom: 16px;
+}
+
+
+.products__item:hover {
+transform: scale(1.05);
+}
+
+.products__item {
+  transition: transform .3s;
+  }
+
+
+// фильтер,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+
+.filter {
+  width: $contentCol4;
+  position: relative;
+  
+
+  // .filter__details
+
+  &__details {
+    padding: 12px 16px;
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+    box-sizing: border-box;
+
+    &[open] {
+      background: #FFFFFF;
+      box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+    }
+        
+    &[open] .filter__summary {
+      color: $colorSite;
+      cursor: pointer;
+    }
+
+    &[open] .filter__summary path {
+      fill: $colorSite;
+
+    }
+  }
+
+  // .filter__summary
+
+  &__summary {
+    display: flex;
+    align-items: center;
+    gap: 11px;
+    cursor: pointer;
+    &::marker {
+      content: '';
+      }
+    
+  }
+
+
+  
+  // .filter__details-in
+
+  &__details-in {
+    padding-top: 16px;
+
+    &[open] .filter__category {
+      color: $colorSite;
+    }
+ 
+  }
+
+  // .filter__category
+
+  &__category {
+    border-left: 5px solid $colorSite;
+    padding-top: 11px;
+    &::marker {
+      content: '';
+      }
+    
+
+
+    // .filter__category_border-bottom
+
+    &_border-bottom {
+      border-bottom: 1px solid #EBEBEB;
+      padding-bottom: 11px;
+      padding-left: 11px;
+      cursor: pointer;
+    }
+  }
+
+  // .filter__box-link
+
+  &__box-link {
+    display: flex;
+    flex-direction: column;
+    gap: 11px;
+    padding: 24px 16px;
+  }
+
+  // .filter__link
+
+  &__link {
+    font-size: 14px;
+      line-height: 17px;
+      color: #6F6E6E;
+      &:hover {
+        color: $colorSite;
+      }
+        
+  }
+}
+
+// хлебные крошки,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+
+.head {
+  background: #F8F3F4;
+  height: 148px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 51px;
+  // .head__heading
+
+  &__heading {
+    font-size: 24px;
+    line-height: 29px;
+    color: $colorSite;
+
+  }
+}
+
+.breadcrumbs {
+
+  // .breadcrumbs__ul
+
+  &__ul {
+    display: flex;
+  }
+
+  // .breadcrumbs__li
+
+  &__li {
+    list-style-type: none;
+    &:last-of-type .breadcrumbs__link {
+      font-weight: bold;
+      color: $colorSite;
+    }
+    
+    &:not(:last-of-type)::after {
+      content: '/';
+      padding-left: 6px;
+      padding-right: 6px;
+      line-height: 17px;
+      color: #636363;
+    }
+    
+  }
+
+  // .breadcrumbs__link
+
+  &__link {
+      line-height: 17px;
+      color: #636363;
+        &:hover {
+          color: $colorSite;
+        }
+            
+  }
+}
+
+.navi-catalogs {
+  margin-bottom: 67px;
+  margin-top: 0px;
+}
+
+.products__items {
+  margin-bottom: 0px;
+}
+.products {
+  margin-bottom: 48px;
+  margin-top: 0px;
+  padding-top: 0px;
+}
+.select-card {
+  margin-bottom: 0px;
+}
+
+
+
+
+

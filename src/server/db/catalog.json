@@ -1,0 +1,47 @@
+[
+    {
+      "id_product": 1,
+      "product_name": "Jacket",
+      "price": 252
+    },
+    {
+      "id_product": 2,
+      "product_name": "Shirt",
+      "price": 142
+    },
+    {
+      "id_product": 3,
+      "product_name": "Blouse",
+      "price": 210
+    },
+    {
+      "id_product": 4,
+      "product_name": "T-shirt",
+      "price": 120
+    },
+    {
+      "id_product": 5,
+      "product_name": "T-shirt with long sleeves",
+      "price": 140
+    },
+    {
+      "id_product": 6,
+      "product_name": "T-shirt white",
+      "price": 99
+    },
+    {
+      "id_product": 7,
+      "product_name": "Shirt white",
+      "price": 145
+    },
+    {
+      "id_product": 8,
+      "product_name": "Leather jacket",
+      "price": 320
+    },
+    {
+      "id_product": 9,
+      "product_name": "Short-sleeved shirt",
+      "price": 110
+    }
+  ]

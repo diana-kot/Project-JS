@@ -1,13 +1,25 @@
 import cart from './CartComponent'
 import products from './ProductComponent'
+import catalog from './CatalogComp'
+import single from './SingleComp'
+import user_cart from "./user_cart.js"
+
 import filterEl from './FilterComp'
 import error from './ErrorComp'
+
+
+
+
+
 
 const app = {
     el: '#app',
     components: {
         cart,
         products,
+        catalog,
+        single,
+        user_cart,
         error,
         'filter-el': filterEl
       },
