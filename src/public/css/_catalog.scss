@@ -236,6 +236,7 @@ transform: scale(1.05);
         
     &[open] .filter__summary {
       color: $colorSite;
+      cursor: pointer;
     }
 
     &[open] .filter__summary path {
@@ -250,6 +251,7 @@ transform: scale(1.05);
     display: flex;
     align-items: center;
     gap: 11px;
+    cursor: pointer;
     &::marker {
       content: '';
       }
@@ -286,6 +288,7 @@ transform: scale(1.05);
       border-bottom: 1px solid #EBEBEB;
       padding-bottom: 11px;
       padding-left: 11px;
+      cursor: pointer;
     }
   }
 

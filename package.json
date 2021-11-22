@@ -1,14 +1,16 @@
 {
-  "name": "ms_shop",
+  "name": "project_market",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
     "build": "del dist && webpack --mode production --config webpack.server.config.js && webpack --mode production --config webpack.prod.config.js",
     "build_dev": "del dist &&  webpack --mode development --config webpack.server.config.js && webpack --mode development --config webpack.dev.config.js --w",
+    "buildProd": "del dist && webpack --mode production --config webpack.server.config.js && webpack --mode production --config webpack.prod.config.js",
     "watch": "webpack -w",
     "start": "nodemon dist/server/server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "keywords": [],
   "author": "",
   "license": "ISC",
   "nodemonConfig": {
@@ -21,6 +23,8 @@
     "express": "^4.17.1",
     "moment": "^2.29.1",
     "nodemon": "^2.0.14",
+    "simplebar-vue": "^1.6.8",
+    "vue-scrollbar": "^1.0.4",
     "yarn": "^1.22.17"
   },
   "devDependencies": {
@@ -36,6 +40,7 @@
     "optimize-css-assets-webpack-plugin": "^5.0.1",
     "style-loader": "^0.23.1",
     "uglifyjs-webpack-plugin": "^2.1.2",
+    "url-loader": "^4.1.1",
     "webpack": "^4.46.0",
     "webpack-cli": "^3.3.12",
     "webpack-node-externals": "^1.7.2"

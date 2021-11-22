@@ -11,7 +11,7 @@ const product = {
                 <p class="item-desc-s">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
                 </div>
                 <div class="item-txt-box">
-                    <p class="item-prise">$\{{ product.price.toLocaleString() }}</p>
+                    <p class="item-prise">$\{{ product.price }}</p>
                 </div>
                     <div class="add-box">
                         <a href="#" class="add" @click="$emit('add-product', product)">
@@ -24,12 +24,12 @@ const product = {
 };
 
 
-const products = {
+const single = {
     data() {
         return {
-            catalogUrl: '/catalogData.json',
+            
             filtered: [],
-            products: [],
+            single: [],
         }
         
     },
@@ -37,12 +37,12 @@ const products = {
         product
     },
     mounted() {
-        this.$parent.getJson(`/api/products`)
+        this.$parent.getJson(`/api/singleProduct`)
             .then(data => {
                 for (let item of data) {
-                    item.imgPath = `img/${item.id_product}.jpg`;
+                    item.imgPath = `img/single__product/${item.id_product}.jpg`;
                     this.$data.filtered.push(item);
-                    this.$data.products.push(item);
+                    this.$data.single.push(item);
                     }   
                 
             });
@@ -50,7 +50,7 @@ const products = {
     methods: {
         filter(userSearch) {
             let regexp = new RegExp(userSearch, 'i');
-            this.filtered = this.products.filter(el => regexp.test(el.product_name));
+            this.filtered = this.single.filter(el => regexp.test(el.product_name));
         }
     },
     template: `<div class="products__items">
@@ -63,4 +63,4 @@ const products = {
 };
 
 
-export default products
+export default single

@@ -282,4 +282,27 @@
         margin-top: 40px;
     }
 
+   .footer .subscribe__input {
+        
+        margin-left: -20px;
+    }
+    .footer .subscribe__button {
+        flex: 0 0 90px;
+    }
+
+    .products__items {
+        grid-template-columns: repeat(auto-fit, minmax(328px, 1fr));
+    }
+
+
+    .main {
+        margin-bottom: 0px;
+    }
+
+    .main__card {
+        width: 100%;
+    }
+    .box__chosse {
+        margin-bottom: 48px;
+    }
 }
