@@ -12,17 +12,17 @@
     {
       "id_product": 3,
       "product_name": "Blouse",
-      "price": 210
+      "price": 2100
     },
     {
       "id_product": 4,
       "product_name": "T-shirt",
-      "price": 120
+      "price": 1200
     },
     {
       "id_product": 5,
       "product_name": "T-shirt with long sleeves",
-      "price": 140
+      "price": 1400
     },
     {
       "id_product": 6,
