@@ -1,20 +1,5 @@
 {
     "amount": 46600,
     "countGoods": 2,
-    "contents": [
-        {
-            "quantity": 1,
-            "id_product": 6,
-            "product_name": "T-shirt white",
-            "price": 99,
-            "imgPath": "img/6.jpg"
-        },
-        {
-            "quantity": 1,
-            "id_product": 2,
-            "product_name": "Shirt",
-            "price": 1420,
-            "imgPath": "img/single__product/2.jpg"
-        }
-    ]
+    "contents": []
 }
